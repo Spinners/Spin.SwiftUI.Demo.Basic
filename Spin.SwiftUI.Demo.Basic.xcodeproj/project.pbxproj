@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		746B8E7823F73548002BA8B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746B8E7723F73548002BA8B7 /* Assets.xcassets */; };
 		746B8E7B23F73548002BA8B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746B8E7A23F73548002BA8B7 /* Preview Assets.xcassets */; };
 		746B8E7E23F73548002BA8B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 746B8E7C23F73548002BA8B7 /* LaunchScreen.storyboard */; };
+		746B8E8823F73AAD002BA8B7 /* Spin.Combine in Frameworks */ = {isa = PBXBuildFile; productRef = 746B8E8723F73AAD002BA8B7 /* Spin.Combine */; };
+		746B8E8A23F73AAD002BA8B7 /* Spin.ReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 746B8E8923F73AAD002BA8B7 /* Spin.ReactiveSwift */; };
+		746B8E8C23F73AAD002BA8B7 /* Spin.RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 746B8E8B23F73AAD002BA8B7 /* Spin.RxSwift */; };
+		746B8E8E23F73AAD002BA8B7 /* Spin.Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 746B8E8D23F73AAD002BA8B7 /* Spin.Swift */; };
+		746B8E9923F73AB9002BA8B7 /* RxSwiftEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E9023F73AB8002BA8B7 /* RxSwiftEffects.swift */; };
+		746B8E9A23F73AB9002BA8B7 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E9223F73AB8002BA8B7 /* Reducer.swift */; };
+		746B8E9B23F73AB9002BA8B7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E9323F73AB8002BA8B7 /* Event.swift */; };
+		746B8E9C23F73AB9002BA8B7 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E9423F73AB8002BA8B7 /* State.swift */; };
+		746B8E9D23F73AB9002BA8B7 /* ReactiveSwiftEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E9623F73AB8002BA8B7 /* ReactiveSwiftEffects.swift */; };
+		746B8E9E23F73AB9002BA8B7 /* CombineEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E9823F73AB9002BA8B7 /* CombineEffects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,12 @@
 		746B8E7A23F73548002BA8B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		746B8E7D23F73548002BA8B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		746B8E7F23F73548002BA8B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746B8E9023F73AB8002BA8B7 /* RxSwiftEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftEffects.swift; sourceTree = "<group>"; };
+		746B8E9223F73AB8002BA8B7 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		746B8E9323F73AB8002BA8B7 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		746B8E9423F73AB8002BA8B7 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		746B8E9623F73AB8002BA8B7 /* ReactiveSwiftEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveSwiftEffects.swift; sourceTree = "<group>"; };
+		746B8E9823F73AB9002BA8B7 /* CombineEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746B8E8A23F73AAD002BA8B7 /* Spin.ReactiveSwift in Frameworks */,
+				746B8E8823F73AAD002BA8B7 /* Spin.Combine in Frameworks */,
+				746B8E8C23F73AAD002BA8B7 /* Spin.RxSwift in Frameworks */,
+				746B8E8E23F73AAD002BA8B7 /* Spin.Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +76,7 @@
 		746B8E7023F73544002BA8B7 /* Spin.SwiftUI.Demo.Basic */ = {
 			isa = PBXGroup;
 			children = (
+				746B8E8523F73A5F002BA8B7 /* Spin */,
 				746B8E7123F73544002BA8B7 /* AppDelegate.swift */,
 				746B8E7323F73544002BA8B7 /* SceneDelegate.swift */,
 				746B8E7523F73544002BA8B7 /* ContentView.swift */,
@@ -75,6 +96,51 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		746B8E8523F73A5F002BA8B7 /* Spin */ = {
+			isa = PBXGroup;
+			children = (
+				746B8E9123F73AB8002BA8B7 /* Common */,
+				746B8E9523F73AB8002BA8B7 /* ReactiveSwift */,
+				746B8E8F23F73AB8002BA8B7 /* RxSwift */,
+				746B8E9723F73AB9002BA8B7 /* Combine */,
+			);
+			path = Spin;
+			sourceTree = "<group>";
+		};
+		746B8E8F23F73AB8002BA8B7 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				746B8E9023F73AB8002BA8B7 /* RxSwiftEffects.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		746B8E9123F73AB8002BA8B7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				746B8E9223F73AB8002BA8B7 /* Reducer.swift */,
+				746B8E9323F73AB8002BA8B7 /* Event.swift */,
+				746B8E9423F73AB8002BA8B7 /* State.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		746B8E9523F73AB8002BA8B7 /* ReactiveSwift */ = {
+			isa = PBXGroup;
+			children = (
+				746B8E9623F73AB8002BA8B7 /* ReactiveSwiftEffects.swift */,
+			);
+			path = ReactiveSwift;
+			sourceTree = "<group>";
+		};
+		746B8E9723F73AB9002BA8B7 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				746B8E9823F73AB9002BA8B7 /* CombineEffects.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +157,12 @@
 			dependencies = (
 			);
 			name = Spin.SwiftUI.Demo.Basic;
+			packageProductDependencies = (
+				746B8E8723F73AAD002BA8B7 /* Spin.Combine */,
+				746B8E8923F73AAD002BA8B7 /* Spin.ReactiveSwift */,
+				746B8E8B23F73AAD002BA8B7 /* Spin.RxSwift */,
+				746B8E8D23F73AAD002BA8B7 /* Spin.Swift */,
+			);
 			productName = Spin.SwiftUI.Demo.Basic;
 			productReference = 746B8E6E23F73544002BA8B7 /* Spin.SwiftUI.Demo.Basic.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +191,9 @@
 				Base,
 			);
 			mainGroup = 746B8E6523F73544002BA8B7;
+			packageReferences = (
+				746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */,
+			);
 			productRefGroup = 746B8E6F23F73544002BA8B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,6 +223,12 @@
 			files = (
 				746B8E7223F73544002BA8B7 /* AppDelegate.swift in Sources */,
 				746B8E7423F73544002BA8B7 /* SceneDelegate.swift in Sources */,
+				746B8E9923F73AB9002BA8B7 /* RxSwiftEffects.swift in Sources */,
+				746B8E9A23F73AB9002BA8B7 /* Reducer.swift in Sources */,
+				746B8E9E23F73AB9002BA8B7 /* CombineEffects.swift in Sources */,
+				746B8E9B23F73AB9002BA8B7 /* Event.swift in Sources */,
+				746B8E9D23F73AB9002BA8B7 /* ReactiveSwiftEffects.swift in Sources */,
+				746B8E9C23F73AB9002BA8B7 /* State.swift in Sources */,
 				746B8E7623F73544002BA8B7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +423,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Spinners/Spin.Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		746B8E8723F73AAD002BA8B7 /* Spin.Combine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			productName = Spin.Combine;
+		};
+		746B8E8923F73AAD002BA8B7 /* Spin.ReactiveSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			productName = Spin.ReactiveSwift;
+		};
+		746B8E8B23F73AAD002BA8B7 /* Spin.RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			productName = Spin.RxSwift;
+		};
+		746B8E8D23F73AAD002BA8B7 /* Spin.Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			productName = Spin.Swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 746B8E6623F73544002BA8B7 /* Project object */;
 }
