@@ -20,7 +20,9 @@ struct ReactiveSwiftView: View {
              .add(feedback: ReactiveFeedback(effect: increaseEffect))
              .reduce(with: ReactiveReducer(reducer: reducer))
 
-         return ReactiveUISpin(spin: countdownSpin)
+        let spin = ReactiveUISpin(spin: countdownSpin)
+        spin.spin()
+        return spin
     }()
 
     var body: some View {
@@ -55,9 +57,6 @@ struct ReactiveSwiftView: View {
             }
         }
         .padding(20)
-        .onAppear {
-            self.uiSpin.spin()
-        }
     }
 }
 
