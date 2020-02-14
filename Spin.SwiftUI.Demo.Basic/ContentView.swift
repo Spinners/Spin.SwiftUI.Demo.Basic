@@ -10,7 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            ReactiveSwiftView()
+                .tabItem {
+                    Image(systemName: "gobackward.10")
+                    Text("ReactiveSwift")
+                }
+            RxSwiftView()
+                .tabItem {
+                    Image(systemName: "gobackward.10")
+                    Text("RxSwift")
+                }
+            CombineView()
+                .tabItem {
+                    Image(systemName: "gobackward.10")
+                    Text("Combine")
+                }
+        }
     }
 }
 

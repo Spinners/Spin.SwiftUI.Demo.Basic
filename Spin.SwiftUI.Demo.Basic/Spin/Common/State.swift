@@ -11,3 +11,16 @@ enum State {
     case decreasing(value: Int, paused: Bool)
     case increasing(value: Int, paused: Bool)
 }
+
+extension State: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .fixed(let value):
+            return ".fixed(value: \(value))"
+        case .decreasing(let value, let paused):
+            return ".decreasing(value: \(value), paused: \(paused))"
+        case .increasing(let value, let paused):
+            return ".increasing(value: \(value), paused: \(paused))"
+        }
+    }
+}
