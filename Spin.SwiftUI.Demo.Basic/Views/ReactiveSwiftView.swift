@@ -15,10 +15,10 @@ struct ReactiveSwiftView: View {
     @ObservedObject
     private var uiSpin: ReactiveUISpin<State, Event> = {
         let countdownSpin = Spinner
-             .from(initialState: State.fixed(value: 10))
-             .add(feedback: ReactiveFeedback(effect: decreaseEffect))
-             .add(feedback: ReactiveFeedback(effect: increaseEffect))
-             .reduce(with: ReactiveReducer(reducer: reducer))
+            .from(initialState: State.fixed(value: 10))
+            .add(feedback: ReactiveFeedback(effect: decreaseEffect))
+            .add(feedback: ReactiveFeedback(effect: increaseEffect))
+            .reduce(with: ReactiveReducer(reducer: reducer))
 
         let spin = ReactiveUISpin(spin: countdownSpin)
         spin.spin()
@@ -45,16 +45,33 @@ struct ReactiveSwiftView: View {
                 }) {
                     Text("Reset")
                         .font(.system(size: 25))
-                }.disabled(self.isCounterFixed)
+                }
+                .frame(width: 100, height: 30, alignment: .center)
+                .padding(10)
+                .background(Color.gray)
+                .opacity(self.isCounterFixed ? 0.5 : 1.0)
+                .foregroundColor(.white)
+                .cornerRadius(20)
+                .disabled(self.isCounterFixed)
+                .animation(.default)
+
                 Spacer()
+
                 Button(action: {
                     self.uiSpin.emit(.toggle)
                 }) {
-                    Text("\(self.isCounterPaused ? "Start": "Pause")")
+                    Text("\(self.isCounterPaused ? "Start": "Stop")")
                         .font(.system(size: 25))
                 }
+                .frame(width: 100, height: 30, alignment: .center)
+                .padding(10)
+                .background(Color.gray)
+                .foregroundColor(.white)
+                .cornerRadius(20)
+
                 Spacer()
             }
+            .padding(20)
         }
         .padding(20)
     }
