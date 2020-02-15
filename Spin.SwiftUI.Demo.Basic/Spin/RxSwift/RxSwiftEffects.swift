@@ -8,6 +8,8 @@
 
 import RxSwift
 
+// This effect will make the state decrease when it is already decreasing and not paused
+// When the state is equal to 0, then the effect asks for an increase
 func decreaseEffect(state: State) -> Observable<Event> {
     guard case let State.decreasing(value, _) = state else { return .empty() }
 
@@ -20,6 +22,8 @@ func decreaseEffect(state: State) -> Observable<Event> {
     return Observable<Event>.just(.increase).delay(.seconds(1), scheduler: scheduler)
 }
 
+// This effect will make the state increase when it is already increasing and not paused
+// When the state is equal to 10, then the effect asks for a decrease
 func increaseEffect(state: State) -> Observable<Event> {
     guard case let State.increasing(value, _) = state else { return .empty() }
 
