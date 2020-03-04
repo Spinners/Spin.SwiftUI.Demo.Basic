@@ -13,7 +13,7 @@ import SwiftUI
 struct ReactiveSwiftView: View {
 
     @ObservedObject
-    private var uiSpin: ReactiveUISpin<State, Event> = {
+    private var uiSpin: ReactiveSwiftUISpin<State, Event> = {
         // the countdownSpin is the formal feedback loop definition
         // it has an initial state and 2 effects that will handle
         // the decrease and increase cycles
@@ -27,8 +27,8 @@ struct ReactiveSwiftView: View {
         // the spin is a UI decoration of the countdownSpin
         // it is a feedback loop the has 1 special UI feedback
         // that we can use to interpret the State and emit Event
-        let spin = ReactiveUISpin(spin: countdownSpin)
-        spin.spin()
+        let spin = ReactiveSwiftUISpin(spin: countdownSpin)
+        spin.start()
         return spin
     }()
 
