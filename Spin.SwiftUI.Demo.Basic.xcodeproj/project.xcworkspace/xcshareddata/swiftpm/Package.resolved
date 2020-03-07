@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift",
         "state": {
           "branch": null,
-          "revision": "e8703715afe26a8efbb2ecfdb3454d648f58d691",
-          "version": "6.2.0"
+          "revision": "e27ccdbf4ec36f154b60b91a0d7e0110c4e882cb",
+          "version": "6.2.1"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/ReactiveX/RxSwift",
         "state": {
           "branch": null,
-          "revision": "b3e888b4972d9bc76495dd74d30a8c7fad4b9395",
-          "version": "5.0.1"
+          "revision": "c1bd31b397d87a54467af4161dde9d6b27720c19",
+          "version": "5.1.0"
         }
       },
       {
@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/Spinners/Spin.Swift.git",
         "state": {
           "branch": null,
-          "revision": "afd59f771c49602e3266ca7261fce44dc70a0f38",
-          "version": "0.11.0"
+          "revision": "56f11486efd7710796e3d26b1052b5043ed986e2",
+          "version": "0.12.0"
         }
       }
     ]
