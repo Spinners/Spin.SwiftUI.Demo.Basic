@@ -20,14 +20,14 @@ struct RxSwiftView: View {
         // the reducer function is common to ReactiveSwift/RxSwift/Combine implementation
         let countdownSpin = Spinner
             .initialState(.fixed(value: 10))
-            .feedback(RxFeedback(effect: decreaseEffect))
-            .feedback(RxFeedback(effect: increaseEffect))
-            .reducer(RxReducer(reducer))
+            .feedback(Feedback(effect: decreaseEffect))
+            .feedback(Feedback(effect: increaseEffect))
+            .reducer(Reducer(reducer))
 
         // the spin is a UI decoration of the countdownSpin
         // it is a feedback loop the has 1 special UI feedback
         // that we can use to interpret the State and emit Event
-        let spin = RxSwiftUISpin(spin: countdownSpin)
+        let spin = SwiftUISpin(spin: countdownSpin)
         spin.start()
         return spin
     }()
