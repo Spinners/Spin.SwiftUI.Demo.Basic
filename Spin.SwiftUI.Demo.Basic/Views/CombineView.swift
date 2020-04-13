@@ -6,8 +6,8 @@
 //  Copyright © 2020 Spinners. All rights reserved.
 //
 
-import Spin_Swift
-import Spin_Combine
+import SpinCombine
+import SpinCommon
 import SwiftUI
 
 struct CombineView: View {

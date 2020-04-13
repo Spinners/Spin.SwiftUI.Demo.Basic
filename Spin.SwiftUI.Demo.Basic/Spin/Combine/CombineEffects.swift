@@ -8,7 +8,6 @@
 
 import Combine
 import Dispatch
-import Spin_Combine
 
 // This effect will make the state decrease when it is already decreasing and not paused
 // When the state is equal to 0, then the effect asks for an increase

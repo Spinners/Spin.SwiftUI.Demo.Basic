@@ -6,8 +6,8 @@
 //  Copyright © 2020 Spinners. All rights reserved.
 //
 
-import Spin_ReactiveSwift
-import Spin_Swift
+import SpinCommon
+import SpinReactiveSwift
 import SwiftUI
 
 struct ReactiveSwiftView: View {

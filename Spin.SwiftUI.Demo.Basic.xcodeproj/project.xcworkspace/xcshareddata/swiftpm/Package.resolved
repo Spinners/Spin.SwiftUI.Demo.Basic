@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/Spinners/Spin.Swift.git",
         "state": {
           "branch": null,
-          "revision": "1331b3ba5b653af2876c2da5079b5ad9be997042",
-          "version": "0.15.0"
+          "revision": "f72c3dd6fdbcd400c12475c23f838eb78e183fa4",
+          "version": "0.16.0"
         }
       }
     ]

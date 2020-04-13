@@ -6,8 +6,8 @@
 //  Copyright © 2020 Spinners. All rights reserved.
 //
 
-import Spin_Swift
-import Spin_RxSwift
+import SpinCommon
+import SpinRxSwift
 import SwiftUI
 
 struct RxSwiftView: View {
