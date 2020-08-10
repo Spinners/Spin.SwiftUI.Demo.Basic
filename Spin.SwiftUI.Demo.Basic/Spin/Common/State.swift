@@ -6,7 +6,7 @@
 //  Copyright © 2020 Spinners. All rights reserved.
 //
 
-enum State {
+enum State: Equatable {
     case fixed(value: Int)
     case decreasing(value: Int, paused: Bool)
     case increasing(value: Int, paused: Bool)

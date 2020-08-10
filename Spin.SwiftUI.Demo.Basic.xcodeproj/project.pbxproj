@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		744428B024451D70002A6075 /* SpinCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 744428AF24451D70002A6075 /* SpinCombine */; };
-		744428B224451D70002A6075 /* SpinCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 744428B124451D70002A6075 /* SpinCommon */; };
-		744428B424451D70002A6075 /* SpinReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 744428B324451D70002A6075 /* SpinReactiveSwift */; };
-		744428B624451D70002A6075 /* SpinRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 744428B524451D70002A6075 /* SpinRxSwift */; };
 		746B8E7223F73544002BA8B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E7123F73544002BA8B7 /* AppDelegate.swift */; };
 		746B8E7423F73544002BA8B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E7323F73544002BA8B7 /* SceneDelegate.swift */; };
 		746B8E7623F73544002BA8B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746B8E7523F73544002BA8B7 /* ContentView.swift */; };
@@ -26,6 +22,10 @@
 		74B7F60C23F742580033E539 /* ReactiveSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F60B23F742580033E539 /* ReactiveSwiftView.swift */; };
 		74B7F60E23F742640033E539 /* RxSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F60D23F742640033E539 /* RxSwiftView.swift */; };
 		74B7F61023F7426F0033E539 /* CombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F60F23F7426F0033E539 /* CombineView.swift */; };
+		74DC33B224E0C9B700309D40 /* SpinCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 74DC33B124E0C9B700309D40 /* SpinCommon */; };
+		74DC33B424E0C9B700309D40 /* SpinReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74DC33B324E0C9B700309D40 /* SpinReactiveSwift */; };
+		74DC33B624E0C9B700309D40 /* SpinCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 74DC33B524E0C9B700309D40 /* SpinCombine */; };
+		74DC33B824E0C9B700309D40 /* SpinRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74DC33B724E0C9B700309D40 /* SpinRxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,10 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744428B624451D70002A6075 /* SpinRxSwift in Frameworks */,
-				744428B024451D70002A6075 /* SpinCombine in Frameworks */,
-				744428B224451D70002A6075 /* SpinCommon in Frameworks */,
-				744428B424451D70002A6075 /* SpinReactiveSwift in Frameworks */,
+				74DC33B824E0C9B700309D40 /* SpinRxSwift in Frameworks */,
+				74DC33B224E0C9B700309D40 /* SpinCommon in Frameworks */,
+				74DC33B624E0C9B700309D40 /* SpinCombine in Frameworks */,
+				74DC33B424E0C9B700309D40 /* SpinReactiveSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,10 +183,10 @@
 			);
 			name = Spin.SwiftUI.Demo.Basic;
 			packageProductDependencies = (
-				744428AF24451D70002A6075 /* SpinCombine */,
-				744428B124451D70002A6075 /* SpinCommon */,
-				744428B324451D70002A6075 /* SpinReactiveSwift */,
-				744428B524451D70002A6075 /* SpinRxSwift */,
+				74DC33B124E0C9B700309D40 /* SpinCommon */,
+				74DC33B324E0C9B700309D40 /* SpinReactiveSwift */,
+				74DC33B524E0C9B700309D40 /* SpinCombine */,
+				74DC33B724E0C9B700309D40 /* SpinRxSwift */,
 			);
 			productName = Spin.SwiftUI.Demo.Basic;
 			productReference = 746B8E6E23F73544002BA8B7 /* Spin.SwiftUI.Demo.Basic.app */;
@@ -217,7 +217,7 @@
 			);
 			mainGroup = 746B8E6523F73544002BA8B7;
 			packageReferences = (
-				746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */,
+				74DC33B024E0C9B700309D40 /* XCRemoteSwiftPackageReference "Spin.Swift" */,
 			);
 			productRefGroup = 746B8E6F23F73544002BA8B7 /* Products */;
 			projectDirPath = "";
@@ -453,35 +453,35 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */ = {
+		74DC33B024E0C9B700309D40 /* XCRemoteSwiftPackageReference "Spin.Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Spinners/Spin.Swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.17.0;
+				minimumVersion = 0.18.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		744428AF24451D70002A6075 /* SpinCombine */ = {
+		74DC33B124E0C9B700309D40 /* SpinCommon */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
-			productName = SpinCombine;
-		};
-		744428B124451D70002A6075 /* SpinCommon */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			package = 74DC33B024E0C9B700309D40 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
 			productName = SpinCommon;
 		};
-		744428B324451D70002A6075 /* SpinReactiveSwift */ = {
+		74DC33B324E0C9B700309D40 /* SpinReactiveSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			package = 74DC33B024E0C9B700309D40 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
 			productName = SpinReactiveSwift;
 		};
-		744428B524451D70002A6075 /* SpinRxSwift */ = {
+		74DC33B524E0C9B700309D40 /* SpinCombine */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 746B8E8623F73AAD002BA8B7 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			package = 74DC33B024E0C9B700309D40 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
+			productName = SpinCombine;
+		};
+		74DC33B724E0C9B700309D40 /* SpinRxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74DC33B024E0C9B700309D40 /* XCRemoteSwiftPackageReference "Spin.Swift" */;
 			productName = SpinRxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
