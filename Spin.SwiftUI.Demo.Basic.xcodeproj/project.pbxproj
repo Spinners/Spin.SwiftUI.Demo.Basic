@@ -458,7 +458,7 @@
 			repositoryURL = "https://github.com/Spinners/Spin.Swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.18.0;
+				minimumVersion = 0.19.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

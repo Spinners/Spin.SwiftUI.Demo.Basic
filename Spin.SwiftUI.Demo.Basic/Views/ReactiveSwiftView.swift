@@ -18,11 +18,11 @@ struct ReactiveSwiftView: View {
         // it has an initial state and 2 effects that will handle
         // the decrease and increase cycles
         // the reducer function is common to ReactiveSwift/RxSwift/Combine implementation
-        let countdownSpin = Spinner
-            .initialState(.fixed(value: 10))
-            .feedback(Feedback(effect: decreaseEffect))
-            .feedback(Feedback(effect: increaseEffect))
-            .reducer(Reducer(reducer))
+        let countdownSpin = Spin(initialState: .fixed(value: 10)) {
+            Feedback(effect: decreaseEffect)
+            Feedback(effect: increaseEffect)
+            Reducer(reducer)
+        }
 
         // the spin is a UI decoration of the countdownSpin
         // it is a feedback loop the has 1 special UI feedback
